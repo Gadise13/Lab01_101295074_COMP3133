@@ -1,0 +1,146 @@
+{
+  "info": {
+    "name": "Lab03 Restaurant API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get all restaurants",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/restaurants",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "restaurants"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get all restaurants sort ASC",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/restaurants?sortBy=ASC",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "restaurants"
+          ],
+          "query": [
+            {
+              "key": "sortBy",
+              "value": "ASC"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get all restaurants sort DESC",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/restaurants?sortBy=DESC",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "restaurants"
+          ],
+          "query": [
+            {
+              "key": "sortBy",
+              "value": "DESC"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cuisine Japanese",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/restaurants/cuisine/Japanese",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "restaurants",
+            "cuisine",
+            "Japanese"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cuisine Bakery",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/restaurants/cuisine/Bakery",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "restaurants",
+            "cuisine",
+            "Bakery"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cuisine Italian",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/restaurants/cuisine/Italian",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "restaurants",
+            "cuisine",
+            "Italian"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delicatessen not Brooklyn",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/restaurants/Delicatessen",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "restaurants",
+            "Delicatessen"
+          ]
+        }
+      }
+    }
+  ]
+}
